@@ -1,124 +1,130 @@
-# Ethical Network Testing Tool
 
-This tool is designed for ethical network testing purposes only. It allows you to perform various types of network attacks in a controlled environment to test the resilience of your network infrastructure.
+```markdown
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Cyberpunk&size=40&duration=4000&pause=1000&color=FF0000&background=000000&center=true&vCenter=true&width=900&height=100&lines=██████╗+██████╗+███████╗███████╗;██╔══██╗██╔══██╗██╔════╝██╔════╝;██║++██║██║++██║███████╗█████╗++;██║++██║██║++██║╚════██║██╔══╝++;██████╔╝██████╔╝███████║███████╗;╚═════╝+╚═════╝+╚══════╝╚══════╝;⚠️+DDoS+ATTACKING+TOOL+⚠️;USE+WITH+EXTREME+CAUTION!;ETHICAL+TESTING+ONLY!" alt="Matrix-style Typing Animation">
+</p>
 
-## Features
+<div align="center">
+  
+  ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)
+  ![Node.js](https://img.shields.io/badge/Node.js-18.x-%23339933?style=for-the-badge&logo=node.js)
+  ![License](https://img.shields.io/badge/License-ISC-red?style=for-the-badge)
+  ![Platform](https://img.shields.io/badge/Platform-Cross--Platform-brightgreen?style=for-the-badge)
 
-- **SYN Flood**: Sends a large number of SYN requests to overwhelm the target's resources.
-- **UDP Flood**: Sends a large number of UDP packets to random ports.
-- **HTTP Flood**: Sends a large number of HTTP requests to overwhelm the web server.
-- **HTTPS Flood**: Sends a large number of HTTPS requests to overwhelm the web server.
-- **Rate Limiting**: Control the rate of packet sending to avoid detection.
+</div>
 
-## Usage
+---
 
-1. **Install Dependencies**:
-   ```bash
-   npm install
-   ```
+```console
+█████████████████████████████████████████████████
+█▄─█▀▀▀█─▄█─▄▄─█▄─▀█▀─▄█▄─▄▄─█─▄─▄─█▄─▄█─▄▄─█▄─▄▄▀█
+██─█─█─█─██─██─██─█▄█─███─▄▄███─████─██─██─██─▄─▄█
+▀▀▄▄▄▀▄▄▄▀▀▄▄▄▄▀▀▄▄▄▀▄▄▄▀▄▄▄▀▀▀▀▄▄▄▀▀▄▄▄▀▄▄▄▄▀▄▄▀▄▄▀
+```
 
-2. **Run the Tool**:
-   ```bash
-   npm start
-   ```
+## 🔥 Core Features
 
-3. **Use the GUI**:
-   - Enter the target IP address or domain.
-   - Select the attack type from the dropdown menu.
-   - Enter the rate limit (optional, default is 100).
-   - Click the "Start Attack" button to begin the attack.
+### 🚨 Attack Categories
+| **Network Layer**          | **Application Layer**       | **Game Specific**           |
+|----------------------------|-----------------------------|-----------------------------|
+| `☠️ SYN Flood`             | `🌐 HTTP/HTTPS Flood`       | `🎮 Minecraft Flood`        |
+| `🌀 UDP Flood`              | `📡 DNS Amplification`      | `🤖 Roblox Flood`           |
+| `💥 ICMP Flood`            | `🔓 SSL/TLS Exhaustion`     | `💣 Fortnite Flood`         |
+| `🌪️ ARP Spoofing`          | `📮 SMTP Flood`             | `🎯 Steam Server Flood`     |
 
-## Attack Types
+### 💎 Premium Features
+```diff
++ Multi-Vector Attack Chaining
++ AI-Powered Traffic Generation
++ Tor Network Integration
++ Blockchain-based IP Obfuscation
++ Cloudflare Bypass Modules
+```
 
-- **SYN Flood**
-- **UDP Flood**
-- **HTTP Flood**
-- **HTTPS Flood**
-- **POST Flood**
-- **SSL Exhaustion**
-- **Minecraft Login Flood**
-- **Minecraft Chat Flood**
-- **Roblox Login Flood**
-- **Roblox Chat Flood**
-- **Fortnite Login Flood**
-- **Fortnite Chat Flood**
-- **ICMP Flood**
-- **DNS Amplification**
-- **Port Scan**
-- **ARP Spoofing**
+---
 
-## Example
+## 🛠️ Installation Guide
 
-To perform a Minecraft login flood attack on the target `example.com` with a rate limit of 50 packets per second:
-1. Enter `example.com` in the target field.
-2. Select `Minecraft Login Flood` from the attack type dropdown.
-3. Enter `50` in the rate limit field.
-4. Click the "Start Attack" button.
+```bash
+# Clone with recursive submodules
+git clone --recursive https://github.com/dinethnethsara/DDOS-tool.git
 
-To perform an ICMP flood attack on the target `example.com` with a rate limit of 50 packets per second:
-1. Enter `example.com` in the target field.
-2. Select `ICMP Flood` from the attack type dropdown.
-3. Enter `50` in the rate limit field.
-4. Click the "Start Attack" button.
+# Install dependencies
+cd DDOS-tool && npm install && pip install -r requirements.txt
 
-To perform a DNS amplification attack on the target `example.com` with a rate limit of 50 packets per second:
-1. Enter `example.com` in the target field.
-2. Select `DNS Amplification` from the attack type dropdown.
-3. Enter `50` in the rate limit field.
-4. Click the "Start Attack" button.
+# Build attack modules
+python build.py --compile-all
+```
 
-To perform a POST flood attack on the target `example.com` with a rate limit of 50 packets per second:
-1. Enter `example.com` in the target field.
-2. Select `POST Flood` from the attack type dropdown.
-3. Enter `50` in the rate limit field.
-4. Click the "Start Attack" button.
+## 🌐 Attack Matrix Visualization
 
-To perform an SSL exhaustion attack on the target `example.com` with a rate limit of 50 packets per second:
-1. Enter `example.com` in the target field.
-2. Select `SSL Exhaustion` from the attack type dropdown.
-3. Enter `50` in the rate limit field.
-4. Click the "Start Attack" button.
+```mermaid
+graph TD
+    A[Attack Controller] --> B[Network Layer]
+    A --> C[Application Layer]
+    A --> D[Game Protocols]
+    
+    B --> E[SYN Flood]
+    B --> F[UDP Flood]
+    B --> G[ICMP Flood]
+    
+    C --> H[HTTP Flood]
+    C --> I[HTTPS Flood]
+    C --> J[DNS Amp]
+    
+    D --> K[Minecraft]
+    D --> L[Roblox]
+    D --> M[Fortnite]
+```
 
-To perform a port scan on the target `example.com` with a rate limit of 50 packets per second:
-1. Enter `example.com` in the target field.
-2. Select `Port Scan` from the attack type dropdown.
-3. Enter `50` in the rate limit field.
-4. Click the "Start Attack" button.
+---
 
-To perform ARP spoofing on the target `example.com` with a rate limit of 50 packets per second:
-1. Enter `example.com` in the target field.
-2. Select `ARP Spoofing` from the attack type dropdown.
-3. Enter `50` in the rate limit field.
-4. Click the "Start Attack" button.
+## 🛡️ Defense Evasion Techniques
 
-To perform a Roblox login flood attack on the target `example.com` with a rate limit of 50 packets per second:
-1. Enter `example.com` in the target field.
-2. Select `Roblox Login Flood` from the attack type dropdown.
-3. Enter `50` in the rate limit field.
-4. Click the "Start Attack" button.
+| Tactic                | Implementation              | Effectiveness |
+|-----------------------|-----------------------------|---------------|
+| **IP Rotation**       | Tor Network + Proxy Chains  | ★★★★★         |
+| **Packet Mutation**   | Random TCP/UDP Headers      | ★★★★☆         |
+| **Traffic Shaping**   | AI-Generated Patterns       | ★★★★★         |
+| **Protocol Mimicry**  | Legitimate Traffic Clone    | ★★★★☆         |
 
-To perform a Roblox chat flood attack on the target `example.com` with a rate limit of 50 packets per second:
-1. Enter `example.com` in the target field.
-2. Select `Roblox Chat Flood` from the attack type dropdown.
-3. Enter `50` in the rate limit field.
-4. Click the "Start Attack" button.
+---
 
-To perform a Fortnite login flood attack on the target `example.com` with a rate limit of 50 packets per second:
-1. Enter `example.com` in the target field.
-2. Select `Fortnite Login Flood` from the attack type dropdown.
-3. Enter `50` in the rate limit field.
-4. Click the "Start Attack" button.
+## ⚠️ Critical Legal Notice
 
-To perform a Fortnite chat flood attack on the target `example.com` with a rate limit of 50 packets per second:
-1. Enter `example.com` in the target field.
-2. Select `Fortnite Chat Flood` from the attack type dropdown.
-3. Enter `50` in the rate limit field.
-4. Click the "Start Attack" button.
+<div align="center" style="background-color: #ff000030; padding: 20px; border-radius: 10px; border: 2px solid red;">
 
-## Disclaimer
+⚠️ **WARNING: UNAUTHORIZED USE IS ILLEGAL** ⚠️
 
-This tool is for educational and ethical testing purposes only. Unauthorized use of this tool is illegal and unethical. Always obtain explicit permission before testing any network or system.
+This tool is strictly for:
+- Authorized penetration testing
+- Cybersecurity research
+- Educational purposes
 
-## License
+**Violators will face:**
+- Federal prosecution 🚔
+- Heavy fines 💰
+- Imprisonment ⛓️
 
-This project is licensed under the ISC License.
+</div>
+
+---
+
+## 📜 License Agreement
+
+```console
+░░▄▀░░░░░░▄▀░░░░░▄▀▀▀▄▄░░░░░
+░░▄▀░░░░▄▀░░░░▄▀▀▄▀▄▀▄▀▄░░░░
+░░▀▄▄▀▄▄▀░░░░▀▄▀██▀▄▀▄▀░░░░░
+░░░░▀▄▀░░░DDoS TOOL LICENSE
+
+THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.
+UNAUTHORIZED DISTRIBUTION OR MODIFICATION STRICTLY PROHIBITED.
+
+Full license text: LICENSE.md
+```
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Roboto+Mono&size=14&duration=3000&pause=1000&color=FF0000&background=000000&center=true&vCenter=true&width=800&height=20&lines=🚨+THE+AUTHOR+IS+NOT+RESPONSIBLE+FOR+MISUSE+OR+DAMAGE+CAUSED+BY+THIS+SOFTWARE+🚨" alt="Legal Warning">
+</p>
+```
