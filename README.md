@@ -22,7 +22,7 @@
 ---
 
 <div align="center">
-<img src="/api/placeholder/50/50" style="border-radius: 25px;" align="center" alt="Features Icon"/>
+<img src="v9QutY_DTXG04VDgqATrfg.jpeg" style="border-radius: 25px;" align="center" alt="Features Icon"/>
 
 ## ✨ Feature Set
 
