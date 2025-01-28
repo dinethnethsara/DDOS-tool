@@ -1,135 +1,176 @@
-
-```markdown
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Roboto+Mono&weight=600&size=40&duration=4000&pause=1000&color=FF0000&background=FF2D5526&center=true&vCenter=true&width=900&height=100&lines=████████╗██████╗+███████╗███████╗;██╔═════╝██╔══██╗██╔════╝██╔════╝;█████╗+++██║++██║███████╗█████╗++;██╔══╝+++██║++██║╚════██║██╔══╝++;██║+++++██████╔╝███████║███████╗;╚═╝+++++╚═════╝+╚══════╝╚══════╝;+++++𝙳𝙳𝙾𝚂-𝙰𝚃𝚃𝙰𝙲𝙺𝙸𝙽𝙶-𝚃𝙾𝙾𝙻+++++" alt="DDoS Header">
-</p>
+# 🌐 Ethical Network Testing Tool
 
 <div align="center">
-  
-  ![Python](https://img.shields.io/badge/-Python_3.10%2B-blue?style=flat-square&logo=python&logoColor=white)
-  ![NodeJS](https://img.shields.io/badge/-Node.js_18.x-%23339933?style=flat-square&logo=node.js&logoColor=white)
-  ![License](https://img.shields.io/badge/-ISC_License-red?style=flat-square)
-  ![Platform](https://img.shields.io/badge/-Win%2FLinux%2FMacOS-purple?style=flat-square)
+
+![Version](https://img.shields.io/badge/version-2.0.0-blue.svg?style=for-the-badge)
+![License](https://img.shields.io/badge/license-ISC-green.svg?style=for-the-badge)
+![Node](https://img.shields.io/badge/node-%3E=14.0.0-brightgreen.svg?style=for-the-badge)
+![Status](https://img.shields.io/badge/status-active-success.svg?style=for-the-badge)
 
 </div>
-
----
-
-```console
-# 𝕯𝖊𝖕𝖑𝖔𝖞𝖒𝖊𝖓𝖙 𝕾𝖊𝖖𝖚𝖊𝖓𝖈𝖊
-$ git clone https://github.com/dinethnethsara/DDOS-tool.git
-$ cd DDOS-tool
-$ npm install && pip install -r requirements.txt
-███████████████████████████████████████████████████████
-█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█
-█░░░░░░░██████╗░███████╗░█████╗░██████╗░░██████╗░░░░░░░█
-█░░░░░░░██╔══██╗██╔════╝██╔══██╗██╔══██╗██╔════╝░░░░░░░█
-█░░░░░░░██║░░██║█████╗░░██║░░██║██████╔╝╚█████╗░░░░░░░░█
-█░░░░░░░██║░░██║██╔══╝░░██║░░██║██╔══██╗░╚═══██╗░░░░░░░█
-█░░░░░░░██████╔╝███████╗╚█████╔╝██║░░██║██████╔╝░░░░░░░█
-█░░░░░░░╚═════╝░╚══════╝░╚════╝░╚═╝░░╚═╝╚═════╝░░░░░░░░█
-█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█
-███████████████████████████████████████████████████████
-```
-
-## 🚀 𝔉𝔢𝔞𝔱𝔲𝔯𝔢𝔰
-
-### 𝕹𝖊𝖙𝖜𝖔𝖗𝖐 𝕷𝖆𝖞𝖊𝖗 𝕬𝖙𝖙𝖆𝖈𝖐𝖘
-```diff
-+ SYN Flood        :: TCP Connection Exhaustion
-+ UDP Flood        :: Bandwidth Saturation
-+ ICMP Storm       :: Ping of Death Variant
-+ ARP Poisoning    :: Network Traffic Hijacking
-```
-
-### 𝕬𝖕𝖕𝖑𝖎𝖈𝖆𝖙𝖎𝖔𝖓 𝕷𝖆𝖞𝖊𝖗 𝕬𝖙𝖙𝖆𝖈𝖐𝖘
-```diff
-- HTTP Flood       :: Layer 7 Resource Overload
-- HTTPS Flood      :: Encrypted Request Spam
-- DNS Amplification:: Reflection Attack Vector
-- SSL Renegotiation:: Handshake Exhaustion
-```
-
-### 𝕲𝖆𝖒𝖊 𝕻𝖗𝖔𝖙𝖔𝖈𝖔𝖑 𝕬𝖙𝖙𝖆𝖈𝖐𝖘
-```bash
-# Minecraft Server
-./toolkit.sh --target mc.server.com --mode login-flood --threads 500
-
-# Roblox Server
-./toolkit.sh --target roblox.com --mode chat-spam --duration 120
-```
-
----
-
-## ✨ 𝕴𝖓𝖘𝖙𝖆𝖑𝖑𝖆𝖙𝖎𝖔𝖓
-
-```bash
-# Clone with submodules
-git clone --recursive https://github.com/dinethnethsara/DDOS-tool.git
-
-# Install dependencies
-cd DDOS-tool
-npm install --force
-pip install -r requirements.txt --no-cache-dir
-
-# Build components
-python build.py --all --optimize
-```
-
----
-
-## ⚡ 𝕼𝖚𝖎𝖈𝖐 𝕾𝖙𝖆𝖗𝖙
-
-```python
-from ddos_engine import AttackManager
-
-config = {
-    "target": "victim.com",
-    "port": 443,
-    "attack_mode": "https-flood",
-    "duration": 300,  # 5 minutes
-    "threads": 1000,
-    "proxy_list": "proxies.txt"
-}
-
-AttackManager.launch(config)
-```
-
----
-
-## 📊 𝕬𝖙𝖙𝖆𝖈𝖐 𝕻𝖗𝖊𝖘𝖊𝖙𝖘
-
-| Preset          | Command                                                                 |
-|-----------------|-------------------------------------------------------------------------|
-| Nuclear Mode    | `./toolkit.sh --target example.com --nuke --threads 5000 --duration 0` |
-| Stealth Mode    | `./toolkit.sh --target example.com --tps 100 --jitter --spoof-ip`      |
-| Game Server     | `./toolkit.sh --target game.com --protocol minecraft --mode login`     |
-| Website Takeover| `./toolkit.sh --target shop.com --http-flood --concurrent 2500`        |
-
----
-
-## ⚠️ 𝕷𝖊𝖌𝖆𝖑 𝕯𝖎𝖘𝖈𝖑𝖆𝖎𝖒𝖊𝖗
-
-<div align="center" style="border:3px solid #ff0000; padding:20px; border-radius:15px; background:#ff000010;">
-
-❗ **𝖂𝖆𝖗𝖓𝖎𝖓𝖌: 𝕴𝖑𝖑𝖊𝖌𝖆𝖑 𝖀𝖘𝖆𝖌𝖊 𝕮𝖆𝖗𝖗𝖎𝖊𝖘 𝕾𝖊𝖛𝖊𝖗𝖊 𝕻𝖊𝖓𝖆𝖑𝖙𝖎𝖊𝖘** ❗
-
-```
-▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-█░▄▀█░▄▀▄░█░▄▀▀░█▀▄▀█░▄▀█░█▀▀░▄▀▀░░░█░█░▄▀▀░█░▄▀▄░█▄░█░▄▀▀
-█░█░█░█▄█░█░▀▄▄░█░▀░█░▀▄░█▀▀░▀▄▄░░░█░█░▀▄▄░█░█▄█░█░▀█░▀▄▄
-▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-```
-𝕿𝖍𝖎𝖘 𝖙𝖔𝖔𝖑 𝖎𝖘 𝖋𝖔𝖗:
-- 𝕷𝖊𝖌𝖆𝖑 𝖕𝖊𝖓𝖊𝖙𝖗𝖆𝖙𝖎𝖔𝖓 𝖙𝖊𝖘𝖙𝖎𝖓𝖌
-- 𝕮𝖞𝖇𝖊𝖗𝖘𝖊𝖈𝖚𝖗𝖎𝖙𝖞 𝖗𝖊𝖘𝖊𝖆𝖗𝖈𝖍
-- 𝕰𝖉𝖚𝖈𝖆𝖙𝖎𝖔𝖓𝖆𝖑 𝖕𝖚𝖗𝖕𝖔𝖘𝖊𝖘 𝖔𝖓𝖑𝖞
-
-</div>
-
----
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Roboto+Mono&size=14&duration=3000&pause=1000&color=FF0000&background=FFFFFF00&center=true&vCenter=true&width=800&height=20&lines=🚨+THIS+TOOL+SHOULD+BE+USED+ONLY+ON+NETWORKS+YOU+OWN+OR+HAVE+EXPLICIT+PERMISSION+TO+TEST+🚨" alt="Final Warning">
+  <img src="/api/placeholder/800/400" alt="Network Tool Banner"/>
 </p>
+
+> 🔒 A comprehensive network infrastructure testing suite designed for controlled environment analysis.
+
+---
+
+## ✨ Features
+
+<table>
+<tr>
+<td width="50%">
+
+### 🔥 Core Features
+- **SYN Flood** - Resource analysis
+- **UDP Flood** - Port testing
+- **HTTP Flood** - Server load testing
+- **HTTPS Flood** - Secure connection testing
+- **Rate Limiting** - Controlled packet management
+
+</td>
+<td width="50%">
+
+### ⚡ Performance
+- Highly optimized execution
+- Real-time monitoring
+- Custom rate limiting
+- Detailed logging
+- GUI interface
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🚀 Quick Start
+
+<div align="center">
+
+### Installation
+
+</div>
+
+```bash
+# Install dependencies
+npm install
+
+# Start the application
+npm start
 ```
+
+<details>
+<summary>📝 GUI Usage Guide</summary>
+
+1. Enter the target IP/domain
+2. Select attack type
+3. Set rate limit (default: 100)
+4. Click "Start Attack"
+
+</details>
+
+---
+
+## 🛠️ Attack Types
+
+<div align="center">
+
+| Network Layer | Game Services | Security Testing |
+|--------------|---------------|------------------|
+| SYN Flood | Minecraft Login/Chat | Port Scan |
+| UDP Flood | Roblox Login/Chat | ARP Spoofing |
+| HTTP Flood | Fortnite Login/Chat | DNS Amplification |
+| HTTPS Flood | | SSL Exhaustion |
+| POST Flood | | ICMP Flood |
+
+</div>
+
+---
+
+## 📖 Usage Examples
+
+<details>
+<summary>🎮 Game Service Testing</summary>
+
+### Minecraft Testing
+```yaml
+Target: example.com
+Type: Minecraft Login Flood
+Rate: 50 packets/sec
+Action: Click "Start Attack"
+```
+
+### Roblox Testing
+```yaml
+Target: example.com
+Type: Roblox Login Flood
+Rate: 50 packets/sec
+Action: Click "Start Attack"
+```
+
+### Fortnite Testing
+```yaml
+Target: example.com
+Type: Fortnite Login Flood
+Rate: 50 packets/sec
+Action: Click "Start Attack"
+```
+</details>
+
+<details>
+<summary>🔒 Security Testing</summary>
+
+### Network Layer Testing
+```yaml
+Target: example.com
+Type: [ICMP/DNS/POST/SSL]
+Rate: 50 packets/sec
+Action: Click "Start Attack"
+```
+
+### Infrastructure Testing
+```yaml
+Target: example.com
+Type: [Port Scan/ARP Spoofing]
+Rate: 50 packets/sec
+Action: Click "Start Attack"
+```
+</details>
+
+---
+
+## ⚠️ Important Notice
+
+<div align="center">
+
+```
+🔒 FOR ETHICAL TESTING PURPOSES ONLY 🔒
+Authorization required for all testing activities
+```
+
+</div>
+
+This tool is designed exclusively for:
+- Authorized testing environments
+- Educational purposes
+- Network resilience assessment
+- Security research
+
+---
+
+## 📜 License
+
+<div align="center">
+
+ISC License • [View License](LICENSE)
+
+---
+
+**Made with 💻 for Network Security Research**
+
+[Documentation](docs) • [Report Issue](issues) • [Request Feature](features)
+
+</div>
