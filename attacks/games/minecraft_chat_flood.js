@@ -1,6 +1,6 @@
 const mineflayer = require('mineflayer');
 
-function minecraftChatFlood(target, rateLimit) {
+function minecraftChatFlood(target, rateLimit, logOutput) {
     const bot = mineflayer.createBot({
         host: target,
         username: 'bot',
@@ -14,7 +14,7 @@ function minecraftChatFlood(target, rateLimit) {
     });
 
     bot.on('error', (err) => {
-        console.error('Bot error: ' + err.message);
+        logOutput('Bot error: ' + err.message);
     });
 }
 

