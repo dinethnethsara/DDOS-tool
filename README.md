@@ -2,43 +2,72 @@
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-2.0.0-blue.svg?style=for-the-badge)
-![License](https://img.shields.io/badge/license-ISC-green.svg?style=for-the-badge)
-![Node](https://img.shields.io/badge/node-%3E=14.0.0-brightgreen.svg?style=for-the-badge)
-![Status](https://img.shields.io/badge/status-active-success.svg?style=for-the-badge)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&duration=3000&pause=1000&color=0CE82B&background=FF000000&center=true&vCenter=true&random=false&width=600&lines=Network+Testing+Tool;Advanced+Security+Suite;Professional+Testing+Platform)](https://git.io/typing-svg)
+
+![Version](https://img.shields.io/badge/version-2.0.0-blue.svg?style=plastic&logo=github&logoColor=white)
+![License](https://img.shields.io/badge/license-ISC-green.svg?style=plastic&logo=opensourceinitiative&logoColor=white)
+![Node](https://img.shields.io/badge/node-%3E=14.0.0-brightgreen.svg?style=plastic&logo=node.js&logoColor=white)
+![Status](https://img.shields.io/badge/status-active-success.svg?style=plastic&logo=statuspage&logoColor=white)
+
+<img src="/api/placeholder/800/400" alt="Network Tool Banner" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"/>
 
 </div>
 
-<p align="center">
-  <img src="/api/placeholder/800/400" alt="Network Tool Banner"/>
-</p>
+<div align="center">
 
-> 🔒 A comprehensive network infrastructure testing suite designed for controlled environment analysis.
+`🔒 PROFESSIONAL NETWORK TESTING SUITE 🔒`
+
+</div>
 
 ---
 
-## ✨ Features
+<div align="center">
+<img src="/api/placeholder/50/50" style="border-radius: 25px;" align="center" alt="Features Icon"/>
 
-<table>
+## ✨ Feature Set
+
+</div>
+
+<table align="center" style="border-radius: 10px; overflow: hidden;">
 <tr>
-<td width="50%">
+<th width="33%" align="center">🛡️ Core Features</th>
+<th width="33%" align="center">🚀 Performance</th>
+<th width="33%" align="center">⚙️ Controls</th>
+</tr>
+<tr>
+<td>
 
-### 🔥 Core Features
-- **SYN Flood** - Resource analysis
-- **UDP Flood** - Port testing
-- **HTTP Flood** - Server load testing
-- **HTTPS Flood** - Secure connection testing
-- **Rate Limiting** - Controlled packet management
+```yml
+SYN Flood:
+  - Resource Testing
+  - Connection Analysis
+UDP Flood:
+  - Port Verification
+  - Packet Management
+```
 
 </td>
-<td width="50%">
+<td>
 
-### ⚡ Performance
-- Highly optimized execution
-- Real-time monitoring
-- Custom rate limiting
-- Detailed logging
-- GUI interface
+```yml
+HTTP/S Flood:
+  - Server Testing
+  - Load Analysis
+Rate Limiting:
+  - Custom Control
+  - Precision Timing
+```
+
+</td>
+<td>
+
+```yml
+GUI Interface:
+  - Real-time Monitor
+  - Dynamic Control
+  - Visual Feedback
+  - Status Updates
+```
 
 </td>
 </tr>
@@ -46,131 +75,171 @@
 
 ---
 
-## 🚀 Quick Start
-
 <div align="center">
 
-### Installation
+## 🎯 Quick Setup
 
 </div>
 
+<div align="center">
+
 ```bash
+# Installation
+$ npm install
+
+# Launch
+$ npm start
+```
+
+</div>
+
+<details>
+<summary><b>🔧 Detailed Setup Guide</b></summary>
+
+### Environment Setup
+```bash
+# Clone repository
+git clone https://github.com/user/network-tool.git
+
+# Navigate to directory
+cd network-tool
+
 # Install dependencies
 npm install
 
-# Start the application
+# Configure settings
+cp .env.example .env
+
+# Start application
 npm start
 ```
-
-<details>
-<summary>📝 GUI Usage Guide</summary>
-
-1. Enter the target IP/domain
-2. Select attack type
-3. Set rate limit (default: 100)
-4. Click "Start Attack"
 
 </details>
 
 ---
 
-## 🛠️ Attack Types
-
 <div align="center">
 
-| Network Layer | Game Services | Security Testing |
-|--------------|---------------|------------------|
-| SYN Flood | Minecraft Login/Chat | Port Scan |
-| UDP Flood | Roblox Login/Chat | ARP Spoofing |
-| HTTP Flood | Fortnite Login/Chat | DNS Amplification |
-| HTTPS Flood | | SSL Exhaustion |
-| POST Flood | | ICMP Flood |
+## 🛠️ Testing Methods
 
 </div>
 
----
-
-## 📖 Usage Examples
-
+<table align="center">
+<tr>
+<td>
 <details>
-<summary>🎮 Game Service Testing</summary>
+<summary><b>🎮 Game Services</b></summary>
 
 ### Minecraft Testing
 ```yaml
 Target: example.com
-Type: Minecraft Login Flood
-Rate: 50 packets/sec
-Action: Click "Start Attack"
+Mode: Login/Chat Flood
+Rate: 50 pps
 ```
 
 ### Roblox Testing
 ```yaml
 Target: example.com
-Type: Roblox Login Flood
-Rate: 50 packets/sec
-Action: Click "Start Attack"
+Mode: Login/Chat Flood
+Rate: 50 pps
 ```
 
 ### Fortnite Testing
 ```yaml
 Target: example.com
-Type: Fortnite Login Flood
-Rate: 50 packets/sec
-Action: Click "Start Attack"
+Mode: Login/Chat Flood
+Rate: 50 pps
 ```
-</details>
 
+</details>
+</td>
+<td>
 <details>
-<summary>🔒 Security Testing</summary>
+<summary><b>🔒 Security</b></summary>
 
-### Network Layer Testing
+### Network Layer
 ```yaml
 Target: example.com
-Type: [ICMP/DNS/POST/SSL]
-Rate: 50 packets/sec
-Action: Click "Start Attack"
+Modes:
+  - ICMP Flood
+  - DNS Amplification
+  - SSL Exhaustion
+Rate: 50 pps
 ```
 
-### Infrastructure Testing
+### Infrastructure
 ```yaml
 Target: example.com
-Type: [Port Scan/ARP Spoofing]
-Rate: 50 packets/sec
-Action: Click "Start Attack"
+Modes:
+  - Port Scan
+  - ARP Spoofing
+Rate: 50 pps
 ```
+
 </details>
+</td>
+</tr>
+</table>
 
 ---
 
-## ⚠️ Important Notice
-
 <div align="center">
 
+## ⚠️ Usage Notice
+
+<img src="/api/placeholder/100/100" style="border-radius: 50%;" alt="Warning Icon"/>
+
 ```
-🔒 FOR ETHICAL TESTING PURPOSES ONLY 🔒
-Authorization required for all testing activities
+🔒 AUTHORIZED TESTING ENVIRONMENTS ONLY 🔒
 ```
 
 </div>
 
-This tool is designed exclusively for:
-- Authorized testing environments
-- Educational purposes
-- Network resilience assessment
-- Security research
+### Intended Use:
+- ✅ Authorized Testing
+- ✅ Educational Research
+- ✅ Security Analysis
+- ✅ Network Assessment
+
+### Prohibited Use:
+- ❌ Unauthorized Testing
+- ❌ Malicious Activities
+- ❌ Harmful Intent
+- ❌ Service Disruption
 
 ---
-
-## 📜 License
 
 <div align="center">
 
-ISC License • [View License](LICENSE)
+## 📜 License Information
+
+[![ISC License](https://img.shields.io/badge/License-ISC-blue.svg?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
+
+<kbd>
+<b>Project Status:</b> Active Development
+</kbd>
+
+</div>
 
 ---
 
-**Made with 💻 for Network Security Research**
+<div align="center">
 
-[Documentation](docs) • [Report Issue](issues) • [Request Feature](features)
+### Quick Links
+
+<kbd>[📚 Docs](docs)</kbd> • <kbd>[🐛 Issues](issues)</kbd> • <kbd>[✨ Features](features)</kbd>
+
+### Connect With Us
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com)
+[![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg)
+
+<br/>
+
+**Built with 💻 for Network Security Research**
+
+```
+Version 2.0.0 | Last Updated: January 2025
+```
 
 </div>
